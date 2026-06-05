@@ -1,0 +1,1 @@
+# Procesamiento-Digital-de-Im-genes-Operador-de-Convoluci-n-Sobel-en-CPU-Secuencial-vs-GPU-Paralelo-
