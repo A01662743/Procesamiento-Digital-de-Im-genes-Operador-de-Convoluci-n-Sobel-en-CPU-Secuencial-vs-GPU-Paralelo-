@@ -120,23 +120,23 @@ Ejecuta la siguiente celda de comandos para verificar que la suite de desarrollo
 Para compilar y correr las dos arquitecturas dentro de Colab, escribir el código precedido del comando %%writefile en la parte superior de la celda de la siguiente manera:
 - Para compilar y ejecutar el Paradigma Secuencial:
 
-%%writefile secuencial_sobel.cpp
+%%writefile convolution.cpp
 // (Pegar aquí el código de C++)
 
 EN OTRA CELDA:
 
-!g++ -O3 secuencial_sobel.cpp -o filtro_secuencial
+!g++ -O3 convolution.cpp -o filtro_secuencial
 !./filtro_secuencial
 
 
 - Para compilar y ejecutar el Paradigma Paralelo con CUDA:
 
-%%writefile cuda_sobel.cu
+%%writefile convolution.cu
 // (Pegar aquí el código de CUDA)
 
 EN OTRA CELDA:
 
-!nvcc -arch=sm_75 cuda_sobel.cu -o filtro_cuda
+!nvcc -arch=sm_75 convolution.cu -o filtro_cuda
 !./filtro_cuda
 
 
